@@ -28,4 +28,3 @@ class Settings(BaseSettings):
 
 
 settings = Settings()  # type: ignore[call-arg]
-print(settings.database_url)

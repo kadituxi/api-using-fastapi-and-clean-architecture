@@ -23,7 +23,6 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-
 app.mount("/static", StaticFiles(directory=settings.base_dir / "static"), name="static")
 app.mount("/media", StaticFiles(directory=settings.base_dir / "media"), name="media")
 
